@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Area/Volume Calculator</title>
+</head>
+  <link rel="stylesheet" href="./style.css">
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+  <h1>
+    <marquee behavior=alternate  bgcolor="blue"> Area/Volume Calculator </marquee>
+   </h1>
+     <br><br>
+<div id="content">
+  <div id="area">
+    <h2>
+      Surface Area
+    </h2>
+    <p id="areaout">
+    </p>
+    <p id="unitouta">
+    </p>
+    <p id="powouta"></p>
+  </div>
+  <div id="volume">
+    <h2>
+      Volume
+    </h2>
+    <p id="volumeout">
+    </p>
+    <p id="unitoutv"></p>
+    <p id="powoutv"></p>
+  </div>
+  <div id="inputarea">
+    <h2>
+      Input Area 
+    </h2>
+    <input id="length" placeholder="Length" type="number">
+    <input id="height" placeholder="Height" type="number">
+    <input id="width" placeholder="Width" type="number"><br>
+    <button id="calcarea">Calculate Area</button>
+    <button id="calcvolume">Calculate Volume</button><br>
+    <select id="shape">
+      <option value="Select Shapes">Select a Shapes</option><br>
+      <option value="rectangular prism">Rectangular prism</option>
+      <option value="cylinder">Cylinder</option>
+      <option value="cone">Cone</option>
+      <option value="cube">Cube</option>
+      <option value="hexahedron">Hexahedron</option>
+      <option value="hemishere">Hemisphere</option>
+      <option value="sphere">Sphere</option>
+      <option value="circle">Circle</option>
+      <option value="triangle">Triangle</option>
+      <option value="square">Square</option>
+      <option value="ellipse">Ellipse</option>
+      <option value="parallelogram">Parallelogram</option> 
+    </select>
+    <select id="unit">
+      <option value="centimeters">Centimeters</option>
+      <option value="meters">Meters</option>
+      <option value="kilometers">Kilometers</option>
+      <option value="inches">Inches</option>
+      <option value="feet">Feet</option>
+      <option value="yards">Yards</option>
+      <option value="miles">Miles</option>
+    </select>
+  </div>
+<!-- partial -->
+</div>  
+<br>
+<div id="information">
+  <h1>
+     Surface Area And Volume Shapes Information,Formula
+  </h1>
+<h1>What is Surface Area?</h1>
+<p>
+The space occupied by a two-dimensional flat surface is called the area. It is measured in square units. 
+The area occupied by a three-dimensional object by its outer surface is called the surface area.</p>
+
+<h1>What is Volume?</h1>
+<p>
+The amount of space, measured in cubic units, that an object or substance occupies is called volume. 
+ Two-dimensional doesn’t have volume but has area only. For example, the Volume of the Circle cannot be found, though the Volume of the
+sphere can be. It is so because a sphere is a three-dimensional shape.
+</p>
+     <h1>Rectangular prism</h1>
+     <p>
+A rectangular prism is a three-dimensional shape, that has six faces (two at the top and bottom and four are lateral faces). 
+All the faces of the prism are rectangular in shape. Hence, there are three pairs of identical faces here.
+Some of the real-life examples of a rectangular prism are a geometry box, notebooks, diaries, rooms, etc.
+The formula to find the area of a rectangular prism is,
+Surface Area= 2 (lh +wh + lw )
+The formula to find the volume of a rectangular prism is,
+volume= length × width × height
+     </p>
+<h1>Cylinder</h1>
+<p>
+ A cylinder is a three-dimensional solid figure which has two identical circular bases joined by a curved surface at a particular distance from the center which is the height of the cylinder.
+ In other words, we mean to calculate the capacity or volume of this box. The capacity of a cylindrical box is basically equal to the volume of the cylinder involved. Thus, the volume of a three-dimensional shape is equal to the amount of space occupied by that shape.
+ The formula to find the area of a cylinder is,Surface Area=2πrh+2πr2
+
+  The formula for the volume of a cylinder is Volume=π×r×2h</p>
+<h1>Cone</h1><p>
+A cone is a three-dimensional solid geometric shape having a circular base and a pointed edge at the top called the apex. A cone has one face and a vertex. There are no edges for a cone.
+
+Surface Area:A=π*r(r+l)
+The equation for calculating the volume of a cone is as follows:
+volume=1/3xπr2h
+where r is the radius and h is the height of the cone.
+</p>
+<h1>Cube</h1>
+<p>
+A cube has 6 faces. The area of each face is found by squaring the length of the side. Multiply the area of one face by the number of faces to get the total surface area of the cube.
+Surface Area=6a2
+A cube is a three-dimensional solid figure, having 6 square faces. Volume is nothing but the total space occupied by an object.
+volume=a3</p>
+<h1>Hexahedron</h1>
+<p>
+  Hexahedron are three-dimensional shapes that consist of six faces, eight vertices and twelve edges. The primary difference between them is a cube has all its sides equal whereas the length, width and height of a cuboid are different. Both shapes look almost the same but have different properties. 
+Surface Area=2(lb+bh+hl)
+Volume=l*b*h
+</p>
+<h1>HemiSphere</h1>
+<p>
+  Any circle drawn around the Earth divides it into two equal halves called hemispheres. There are generally considered to be four hemispheres: Northern, Southern, Eastern, and Western. The Equator, or line of 0 degrees latitude, divides the Earth into the Northern and Southern hemispheres.
+  The  surface area of a hemisphere = 3πr2 square units
+Where π is a constant whose value is equal to 3.14 approximately. “r” is the radius of the hemisphere.
+Surface Area=3*π*r2
+Volume=2/3π*r3
+</p>
+<h1>Sphere</h1>
+<p>
+  The surface area of a sphere is always expressed in square units. The formula for the surface area of a sphere depends on the radius and the diameter of the sphere. It is mathematically expressed as 4πr2; where 'r' is the radius of the sphere.
+Surface Area=4*π*r2
+If the surface area is multiplied by the diameter, the volume will be obtained, in which every point on its surface is equidistant from its center.
+ Mathematically, to calculate the volume of a sphere, the following formula is used: The volume of a sphere = 4/3 𝜋 r³, where r is the radius of the sphere.
+</p>
+<h1>Circle</h1>
+<p>     
+ What is the Area of Circle?
+The area of a circle is the amount of space enclosed within the boundary of a circle.
+ The region within the boundary of the circle is the area occupied by the circle.
+  It may also be referred to as the total number of square units inside that circle.
+  The surface area of circle formula = πr2 where 'r' is the radius of the circle and the value of π is approximately 3.14 or 22/7.
+Formula:-Surface Area=π*r2
+</p>
+<h1>Triangle</h1>
+<p>
+  The area of a triangle is the region enclosed within the sides of the triangle. The area of a triangle varies from one
+   triangle to another depending on the length of the sides and the internal angles. The area of a triangle is expressed in square units, 
+   like, m2, cm2, in2, and so on.
+  The basic formula for the area of a triangle is equal to half the product of its base and height, i.e., A = 1/2 × b × h. This formula is applicable to all types of triangles, whether it is a scalene triangle, an isosceles triangle, or an equilateral triangle.
+Formula:-Surface Area=1/2*b*h
+<h1>Square</h1>
+<p>
+  square is a two-dimensional figure with four sides. It is also known as a quadrilateral. The area of a square is defined as the total number of unit squares in the shape of a square. In other words, it is defined as the space occupied by the square.
+  area of a square is the product of the length of each side with itself. That is, Area A = s x s where s is the length of each side of the square. 
+</p>
+<h1>Ellipse</h1>
+<p>
+  All ellipses have two foci or focal points. The sum of the distances from any point on the ellipse to the two focal points is a constant value. There is a center and a major and minor axis in all ellipses. The eccentricity value of all ellipses is less than one.
+Surface Area=π*a*b
+</p>
+<h1>Parallelogram</h1>
+<p>
+The area of a parallelogram is defined as the region or space covered by a parallelogram in a two-dimensional plane.
+ A parallelogram is a special kind of quadrilateral. If a quadrilateral has two pairs of parallel opposite sides, then it is called a parallelogram.
+ The area of a parallelogram refers to the total number of unit squares that can fit into it and it is measured in square units 
+ (like cm2, m2, in2, etc). It is the region enclosed or encompassed by a parallelogram in two-dimensional space. Let us recall the
+  definition of a parallelogram.
+Surface Area=b*h
+ </p>
+</div>
+  <script  src="./script.js"></script>
+</body>
+</html>
